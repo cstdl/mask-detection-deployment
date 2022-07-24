@@ -1,0 +1,12 @@
+.venv
+.idea
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+src/static/uploads/**
+!src/static/uploads/DO_NOT_DELETE.txt
