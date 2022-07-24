@@ -11,6 +11,7 @@ google-auth==2.9.1
 google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 grpcio==1.47.0
+gunicorn==20.1.0
 h5py==3.7.0
 idna==3.3
 importlib-metadata==4.12.0
@@ -41,7 +42,7 @@ tensorflow==2.9.1
 tensorflow-estimator==2.9.0
 tensorflow-io-gcs-filesystem==0.26.0
 termcolor==1.1.0
-typing_extensions==4.3.0
+typing-extensions==4.3.0
 urllib3==1.26.10
 Werkzeug==2.2.0
 wrapt==1.14.1

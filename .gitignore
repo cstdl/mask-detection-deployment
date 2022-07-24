@@ -8,5 +8,5 @@ __pycache__/
 
 # C extensions
 *.so
-src/static/uploads/**
-!src/static/uploads/DO_NOT_DELETE.txt
+static/uploads/**
+!static/uploads/DO_NOT_DELETE.txt

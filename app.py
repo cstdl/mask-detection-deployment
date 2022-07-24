@@ -5,8 +5,7 @@ from tensorflow import keras
 from flask import Flask, render_template, request, redirect
 
 # set root path
-ROOT_PATH = os.path.abspath('..')
-MODEL_PATH = f'{ROOT_PATH}/models/best_model.h5'
+MODEL_PATH = 'models/best_model.h5'
 
 
 # calling model
@@ -48,7 +47,7 @@ def predict():
     if request.method == 'POST' and request.files['file']:
         file = request.files['file']
         filename = file.filename
-        file_path = os.path.join(f'{ROOT_PATH}/src/static/uploads/', filename)  # slashes should be handled properly
+        file_path = os.path.join('static/uploads/', filename)  # slashes should be handled properly
         file.save(file_path)
         result = prediction(file_path)
         return render_template('predict.html', result=result, image=f"static/uploads/{filename}")
